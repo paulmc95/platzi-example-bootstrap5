@@ -1,0 +1,309 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="styles.css">
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+
+    <title>PlatziConf Hawai</title>
+  </head>
+  <!-- data-bs-spy="scroll"-> Da la propiedad de marcarse la seccion que estemos -->
+  <!-- data-bs-target="#navbar"-> Se conocta al menu que desea utilizar como scroll  -->
+  <body data-bs-spy="scroll" data-bs-target="#navbar" data-bs-offset="60">
+    <!-- sticky-top-> Permite mantener la barra de navegacion en la parte superios -->
+    <!-- Header -->
+    <nav id="header" class="navbar-dark  navbar-expand-lg navbar-light navbar bg-dark sticky-top">
+      <div class="container">
+        <a class="navbar-brand" href="#">
+          <img src="assets/images/Logo-desarrollador.png" alt="Logo"> Paul
+        </a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbar">
+          <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+            <li class="nav-item">
+              <a class="nav-link active" aria-current="page" href="#main">La conferencia</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#speakers">Los oradores</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#place-time">El lugar y la fecha</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#conviertete-en-orador">Conviertete en orador</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link text-platzi" href="#" data-bs-toggle="modal" data-bs-target="#modalCompra">Comprar ticket</a>
+            </li>
+
+          </ul>          
+        </div>
+      </div>
+    </nav>
+    <!--/Header  -->
+
+    <!-- Main -->
+    <main id="main">
+      <div id="carousel" class="carousel slide" data-bs-ride="carousel" data-bs-pause="false">
+        <div class="carousel-inner">
+          <div class="carousel-item active">
+            <img src="assets/images/desarrollo-web.jpg" class="d-block w-100" alt="...">
+          </div>
+          <div class="carousel-item">
+            <img src="assets/images/desarrollo1.jpg" class="d-block w-100" alt="...">
+          </div>0
+          <div class="carousel-item">
+            <img src="assets/images/carousel1.jpg" class="d-block w-100" alt="...">
+          </div>
+          <div class="overlay">
+            <div class="container">
+              <div class="row align-items-center">
+                <!-- text-md-end->Manda a la izquierda el texto desde el tamaño mediano de la ventana -->
+                <!-- text-center-> Centra el texto -->
+                <div class="col-md-6 offset-md-6 text-center text-md-end">
+                  <h1>Platzi Conf Hawai</h1>
+                  <!--d-none-> Que no aparezca el text  -->
+                  <!-- d-md-block-> El texto aparece a partir de los medianos -->
+                  <p class="d-none d-md-block">
+                    Platzi Conf llega por primera vez a Huawai! 
+                    Un evento para compartir con nuestra comunidad el conocimiento y experiencia 
+                    de los expertor que están creando el futuro de internet. 
+                    Ven a conocer a miembros del Team Platzi, a otros 
+                    estudiantes de Platzi y a los oradores de primer nivel 
+                    que tenemos para ti. Te esperamos!
+                  </p>
+                  <a href="#" class="btn btn-outline-light">Quiero ser un orador</a>
+                  <button type="button" class="btn btn-platzi" data-bs-toggle="modal" data-bs-target="#modalCompra">Comprar tickets</button>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </main>    
+    <!-- /Main -->
+
+    <!-- Speakers -->
+    <section id="speakers" class="mt-4">
+      <div class="container">
+        <div class="row">
+          <div class="col text-center text-uppercase">
+            <small>Conoce a los</small>
+            <h2>Oradores</h2>
+          </div>
+        </div>
+        <div class="row" id="card-id">
+          <div class="col-md-4 mb-4">
+            <div class="card">
+              <img class="card-img-top" src="assets/images/orador1-elon-musk.jpg" alt="Elon Musk">
+              <div class="card-body">
+                <div class="badges">
+                  <span class="badge bg-warning text-dark">JavaScript</span>
+                  <span class="badge bg-info text-dark">React</span>
+                </div>
+                <h5 class="card-title mb-2 mt-2">Elonk Musk</h5>
+                <p class="card-text">Elon Reeve Musk es un emprendedor y magnate sudafricano. Cofundador de PayPal, SpaceX, Hyperloop</p>
+                <a href="#" class="btn btn-primary">Ver</a>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-4 mb-4">
+            <div class="card">
+              <img class="card-img-top" src="assets/images/orador2-mark-zuckenberg.jpg" alt="Mark Zuckenberg">
+              <div class="card-body">
+                <div class="badges">
+                  <span class="badge bg-primary">HTML</span>
+                  <span class="badge bg-success">CSS</span>
+                </div>
+                <h5 class="card-title mb-2 mt-2">Mark Zuckenberg</h5>
+                <p class="card-text">Mark Elliot Zuckerberg es un programador y empresario estadounidense, uno de los creadores de Facebook.</p>
+                <a href="#" class="btn btn-primary">Ver2</a>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-4 mb-4">
+            <div class="card">
+              <img class="card-img-top" src="assets/images/orador3-freddy-vega.jpg" alt="Freddy Vega">
+              <div class=" card-body">
+                <div class="badges">
+                  <span class="badge bg-danger">Java</span>
+                  <span class="badge bg-info bg-opacity-50 text-black">Kotlin</span>
+                </div>
+                <h5 class="card-title mb-2 mt-2">Freddy Vega</h5>
+                <p class="card-text">Fundador y CEO de Platzi, John Freddy Vega es uno de los 20 latinos más influyentes de la industria de la tecnología.</p>
+                <a href="#" class="btn btn-primary">Ver3</a>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-4 mb-4">
+            <div class="card">
+              <img class="card-img-top" src="assets/images/orador4-jeff-bezos.jpg" alt="Jeff Bezos">
+              <div class="card-body">
+                <div class="badges">
+                  <span class="badge bg-dark bg-opacity-75">Algebra</span>
+                  <span class="badge bg-danger">Trigonometria</span>
+                </div>
+                <h5 class="card-title mb-2 mt-2">Jeff Bezos</h5>
+                <p class="text">Jeffrey Preston Bezos es un empresario y magnate estadounidense, fundador de la empresa de venta en línea Amazon la cual posee el 17%</p>
+                <a href="#" class="btn btn-primary">Ver4</a>
+              </div>
+            </div>
+
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- /Speakers -->
+
+    <!-- Lugar y Fecha -->
+    <section id="place-time">
+      <div class="container-fluid">
+        <div class="row">
+          <div class="col-12 col-lg-6 ps-0 pe-0">
+            <img src="assets/images/fecha-hora.jpg" alt="Honolulu">
+          </div>
+          <div class="col-12 col-lg-6 pt-4 pb-4">
+            <h2>Honolulu - Octubre 2025</h2>
+            <p>Honolulu, en la costa sur de la isla de Oahu, es la capital de Hawái y la vía de acceso a la cadena de 
+              islas de EE.UU. El barrio de Waikiki es un centro de restaurantes, vida nocturna y comercio, 
+              famoso por su icónica playa con forma de medialuna bordeada de palmeras y hoteles de muchos pisos y 
+              con el cráter volcánico Diamond Head en lo alto a la distancia. 
+            </p>
+            <a class="btn btn-outline-light" href="https://es.wikipedia.org/wiki/Honolulu">Conoce más</a>
+          </div>
+        </div>
+      </div>
+
+    </section>
+    <!-- /Lugar y Fecha -->
+
+
+    <!-- Conviertete en orador -->
+    <section id="conviertete-en-orador" class="pt-3 pb-3">
+      <div class="container">
+        <div class="row">
+          <div class="col text-uppercase text-center">
+            <small>Conviertete en un</small>
+            <h2>ORADOR</h2>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col text-center">
+            Anotate como orador para dar una charla <abbr data-bs-toggle="tooltip" title="Charlas de 5 minutos">ignite</abbr>.
+            Cuéntanos de qué quieres hablar!
+          </div>
+        </div>
+        <div class="row">
+          <!-- offset-md-2-> Manda 2 columnas hacia la derecha a los elementos -->
+          <div class="col col-md-10 offset-md-1 col-lg-8 offset-lg-2 pt-2">
+            <div class="row mb-2">
+              <div id="form-group" class="col-12 col-md-6 mt-1 mb-1">
+                <input type="text" class="form-control" placeholder="Nombre" aria-label="Nombre">
+              </div>
+              <div id="form-group" class="col-12 col-md-6 mt-1 mb-1">
+                <input type="text" class="form-control" placeholder="Apellido" aria-label="Apellido">
+              </div>
+            </div>
+            <div class="row">
+              <div class="col">
+                <textarea name="text" class="col-12" id="textarea" placeholder="Sobre que quieres hablar?" rows="10"></textarea>
+                <small class="form-text text-muted">
+                  Recuerda incluir un titulo para tu charla
+                </small>
+              </div>
+            </div>
+            <div class="form-row">
+              <div class="col">
+                <button type="button" class="btn btn-platzi w-100">Enviar</button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- /Conviertete en orador -->
+
+    <!-- Footer -->
+    <!-- pb-4(padding botton:4) pt-4(padding top:4) -->
+    <footer id='footer' class="pb-4 pt-4">
+      <div class="container">
+        <div class="row text-center">
+          <div class="col-12 col-lg">
+            <a href="#">Preguntas Frecuentes</a>
+          </div>
+          <div class="col-12 col-lg">
+            <a href="#">Contactanos</a>
+          </div>
+          <div class="col-12 col-lg">
+            <a href="#">Prensa</a>
+          </div>
+          <div class="col-12 col-lg">
+            <a href="#">Conferencias</a>
+          </div>
+          <div class="col-12 col-lg">
+            <a href="#">Términos y condiciones</a>
+          </div>
+          <div class="col-12 col-lg">
+            <a href="#">Privacidad</a>
+          </div>
+          <div class="col-12 col-lg">
+            <a href="#">Estudiantes</a>
+          </div>
+        </div>
+      </div>
+    </footer>
+    <!--/Footer  -->
+
+    <!-- Modal -->
+    <div class="modal fade" id="modalCompra" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+      <div class="modal-dialog">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h5 class="modal-title" id="exampleModalLabel">Comprar tickets</h5>
+            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+          </div>
+          <div class="modal-body">
+            <form action="">
+              <div class="row">
+                <div class="col-12">
+                  <div class="input-group mb-3">
+                    <span class="input-group-text" id="basic-addon1">@</span>
+                    <input type="text" class="form-control" placeholder="Username" aria-label="Username" aria-describedby="basic-addon1">
+                  </div>
+                </div>
+              </div>
+            </form>
+            <div class="alert alert-warning" role="alert">
+              Recibiras un correo de confirmación si sales sorteado
+            </div>
+          </div>
+          <div class="modal-footer">
+            <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cancelar</button>
+            <button type="button" class="btn btn-platzi">Comprar</button>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- !Modal -->
+
+    <!-- Optional JavaScript; choose one of the two! -->
+
+    <!-- Option 1: Bootstrap Bundle with Popper -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
+    <script src="tooltip.js"></script>
+
+    <!-- Option 2: Separate Popper and Bootstrap JS -->
+    
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.10.2/dist/umd/popper.min.js" integrity="sha384-7+zCNj/IqJ95wo16oMtfsKbZ9ccEh31eOz1HGyDuCQ6wgnyJNSYdrPa03rtR1zdB" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.min.js" integrity="sha384-QJHtvGhmr9XOIpI6YVutG+2QOK9T+ZnN4kzFN1RtK3zEFEIsxhlmWl5/YESvpZ13" crossorigin="anonymous"></script>
+
+    <!-- Jquery -->
+    <script src="https://code.jquery.com/jquery-3.6.0.slim.min.js" integrity="sha256-u7e5khyithlIdTpu22PHhENmPcRdFiHRjhAuHcs05RI=" crossorigin="anonymous"></script>
+
+  </body>
+</html>

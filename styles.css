@@ -1,0 +1,71 @@
+.text-platzi{
+    /* Pinta de color verde el nav-item */
+    color: #97c93e !important;
+}
+
+.btn-platzi{
+    background-color:#97c93e !important;
+    color: white;
+}
+
+.btn-platzi:hover{ 
+    background-color: #82ad36 !important;
+}
+
+#main .carousel-inner img{
+    max-height: 70vh;
+    object-fit: cover;
+    filter: grayscale(70%);
+}
+
+#carousel{
+    position: relative;
+}
+
+#carousel .overlay{
+    position: absolute;
+    top:0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background-color: rgba(0, 0, 0, 0.5);
+    color: white;
+
+}
+
+#carousel .overlay .container,
+#carousel .overlay .row{
+    height: 100%;
+}
+
+.card-img-top{
+    /* width: 200px; */
+    height: 250px;
+    /* Permite que no se pierda la proporcion */
+    /* object-fit: contain; */
+}
+
+
+#place-time{
+    background-color: #343a40;
+    color: white;
+}
+
+#place-time img{
+    max-width: 100%;
+}
+
+#footer{
+    background: #03091e!important;
+}
+
+/* Para dar colo a los enlaces dentro del footer */
+#footer a{
+    color: white;    
+}
+
+/* Para el img que esta dentro de header */
+#header img{
+    height: 30px;
+}
+
